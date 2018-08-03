@@ -93,11 +93,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // in 3D space: distance = √ ((x2 - x1)ˆ2 + (y2 - y1)ˆ2 + (z2-z1)ˆ2)
         
-        let distance = sqrt(pow(a, 2) + pow(b, 2) + pow(c, 2))
-        
-        print("Distance = \(distance)")
-        
         // render distance in 3D text
+        let distance = sqrt(pow(a, 2) + pow(b, 2) + pow(c, 2))
         updateText(text: "\(distance)", atPosition: start.position)
     }
     
